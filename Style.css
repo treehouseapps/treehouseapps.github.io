@@ -1,0 +1,136 @@
+header{ height: 90px; background: #546FE7; }
+body{background-color: white;}
+.navigation-menu{
+  		  float: right;
+ 		  display: flex;
+  		  align-items: center;
+ 		  min-height: 90px; }
+
+.navigation-menu a{
+  		     margin-left: 10px;
+		     color: #ddd;
+		     text-transform: uppercase;
+		     font-size: 14px;
+		     padding: 13px 14px;
+		     border-radius: 4px;
+		     transition: .3s linear; }
+
+.navigation-menu a:hover{
+  			  background: #273b91;
+  			  color: #fff;
+  			  transform: scale(1.1); }
+a.btn0 {
+	 position: absolute; left: 810px; background: #273b91;
+  	 color: #fff; font-weight: 500; letter-spacing: 1.5px; }
+a.btn1 {
+	 position: absolute; left: 892px; background: #273b91;
+  	 color: #fff; font-weight: 500; letter-spacing: 1.5px; }
+a.btn2 {
+	 position: absolute; left: 1005px; background: #273b91;
+  	 color: #fff; font-weight: 500; letter-spacing: 1.5px; }
+a.btn3 {
+	 position: absolute; left: 1090px; background: #273b91;
+  	 color: #fff; font-weight: 500; letter-spacing: 1.5px; }
+a.btn4 {
+	 position: absolute; left: 1200px; background: #273b91;
+  	 color: #fff; font-weight: 500; letter-spacing: 1.5px; }
+
+a.btn0:hover{ 
+		background: #fff; color: #273b91; font-weight: 500;
+  		letter-spacing: 2px; }
+a.btn1:hover{
+		background: #fff; color: #273b91; font-weight: 500;
+  		letter-spacing: 2px; }
+a.btn2:hover{ 
+		background: #fff; color: #273b91; font-weight: 500;
+  		letter-spacing: 2px; }
+a.btn3:hover{ 
+		background: #fff; color: #273b91; font-weight: 500;
+  		letter-spacing: 2px; }
+a.btn4:hover{ 
+		background: #fff; color: #273b91; font-weight: 500;
+  		letter-spacing: 2px; }
+
+.tree{ position: absolute; top: 7%; left: 7%; font-size: 35px; }
+.enjoy{ position: absolute; top:93%; left: 25%; font-size: 20px;}
+.rate{ position: absolute; top:93%; left: 50%; font-size: 20px;}
+.become{ position: absolute; top:93%; left: 60%; font-size: 20px;}
+.center{ position: absolute; top:20%; left: 13%; font-size: 55px;}
+.play{ position: absolute; top:47%; left: 15%; font-size: 25px;}
+.button{ background:skyblue ; color: black; border-radius: 5px;
+	 padding: 8px 15px; text-align: center; font-size: 15px; }
+
+.let{	
+	position: absolute; top: 60%; left: 43%;
+	padding: 8px 18px;
+	text-align: center;
+ 	border-radius: 100px;
+	border: #546FE7 8px solid;
+	font-size: 25px; }
+
+.app-frontpage { 
+		 background: white ;
+		 position: absolute;
+		 top: 45%;
+		 left: 38%;
+		 font-size: 30px;
+		 border-radius: 200px;
+		 border: brown 7px solid;
+		 padding: 8px 18px; }
+.game {
+	background: white ;
+	position: absolute;
+	top: 45%;
+	left: 53%;
+	font-size: 30px;
+	border-radius: 200px;
+	border: brown 7px solid;
+	padding: 8px 18px; }
+
+.choose{
+	background: #546FE7 ;
+	position: absolute;
+	top: 30%;
+	left: 35%;
+	font-size: 40px;
+	color: black;
+	border: brown 8px solid;
+	padding: 10px 18px;
+	border-radius: 20px;
+	}
+button{
+	background-color: white ;
+	font-size: 30px
+}
+marquee { 
+	   position: absolute; top:70% ; left: 15%;
+	   text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000, 0 0;
+	   font-size: 2em; color:#546FE7; }
+.img-front{   position: absolute;top: 60%;left: 40%; fint-size:50px;}
+.img1-front{   position: absolute;top: 30%;left: 15%; fint-size:50px;}
+.img2-front{   position: absolute;top: 30%;left: 73%; fint-size:50px;}
+
+.app-apps{   position: absolute;top: 17%;left: 8%;font-size: 30px;}
+.img-apps{   position: absolute;top: 20%;left: 20%;}
+.img1-apps{   position: absolute;top: 40%;left: 20%;}
+.img2-apps{   position: absolute;top: 60%;left: 20%;}
+.img3-apps{   position: absolute;top: 80%;left: 20%;}
+.img4-apps{   position: absolute;top: 20%;left: 50%;}
+.img5-apps{   position: absolute;top: 40%;left: 50%;}
+.img6-apps{   position: absolute;top: 60%;left: 50%;}
+.img7-apps{   position: absolute;top: 80%;left: 50%;}
+.img8-apps{   position: absolute;top: 30%;left: 3%; fint-size:50px;}
+.img9-apps{   position: absolute;top: 40%;left: 73%; fint-size:50px;}
+
+.txt-apps{	position: absolute;top: 25%;left: 27%;font-size:25px;}
+.txt1-apps{	position: absolute;top: 45%;left: 27%;font-size:25px;}
+.txt2-apps{	position: absolute;top: 65%;left: 27%;font-size:25px;}
+.txt3-apps{	position: absolute;top: 85%;left: 27%;font-size:25px;}
+.txt4-apps{	position: absolute;top: 25%;left: 57%;font-size:25px;}
+.txt5-apps{	position: absolute;top: 45%;left: 57%;font-size:25px;}
+.txt6-apps{	position: absolute;top: 65%;left: 57%;font-size:25px;}
+.txt7-apps{	position: absolute;top: 85%;left: 57%;font-size:25px;}
+
+
+
+
