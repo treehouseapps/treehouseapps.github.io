@@ -134,6 +134,11 @@ marquee {
 
 .if { position: absolute; top: 45%; left: 20%; font-size: 35px;}
 .box { position: absolute; top: 55%; left: 30%;}
+.shop {position: absolute; top: 67%; left: 7%; font-size: 15px; height: 70px;width: 230px;
+	font-weight: bold; color: brown; border: 2px solid gold; text-align: center;
+	border-radius: 10px 70px 70px 10px;}
+.but{font-weight: bold; color: blue; border-radius: 10px 10px 40px 40px; border: brown solid 2px;}
+.but:hover{padding: 7px;}
 
 
 
