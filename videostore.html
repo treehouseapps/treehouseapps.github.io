@@ -1,0 +1,121 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8"><title>Tree HOUSE Video Store</title>
+<link rel="stylesheet" href="vid\Style.css">
+
+</head>
+<body>
+<header>
+ <nav class="navigation-menu">
+          <a href="http://treehouseapps.github.io/index.html"class="btn0">Home</a>
+          <a href="http://treehouseapps.github.io/register.html"class="btn1">Register</a>
+          <a href="http://treehouseapps.github.io/login.html"class="btn2">LOGIN</a>
+          <a href="http://treehouseapps.github.io/thanks.html"class="btn3">Contact</a>
+          <a href="http://treehouseapps.github.io/thanks.html"class="btn4">About Us</a></nav></header>
+<div class="tree"><font color="white"><b>Tree House</font></b></div>
+<div class="hero"><center>
+	<div class="review-box">
+		<div id="slide">
+		<div class="card">
+		<video controls>
+  <source src="vid\video.mp4" type="video/mp4" >
+</video>
+		</div>
+		<div class="card">
+		<video controls>
+  <source src="vid\video1.mp4" type="video/mp4">
+</video>
+		</div>
+		<div class="card">
+		<video controls>
+  <source src="vid\video2.mp4" type="video/mp4">
+</video>
+		</div>
+		<div class="card">
+		<video controls>
+  <source src="vid\video3.mp4" type="video/mp4">
+</video>
+		</div>
+		<div class="card">
+		<video controls>
+  <source src="vid\video4.mp4" type="video/mp4">
+</video>
+		</div>
+		<div class="card">
+		<video controls>
+  <source src="vid\video5.mp4" type="video/mp4">
+</video>
+		</div>
+		<div class="card">
+		<video controls>
+  <source src="vid\video6.mp4" type="video/mp4">
+</video>
+		</div>
+		<div class="card">
+		<video controls>
+  <source src="vid\video.mp4" type="video/mp4">
+</video>
+		</div>
+		<div class="card">
+		<video controls>
+  <source src="vid\video8.mp4" type="video/mp4">
+</video>
+		</div>
+		<div class="card">
+		<video controls>
+  <source src="vid\video9.mp4" type="video/mp4">
+</video>
+		</div>
+		<div class="card">
+		<video controls>
+  <source src="vid\video1.mp4" type="video/mp4">
+</video>
+		</div>
+		<div class="card">
+		<video controls>
+  <source src="vid\video.mp4" type="video/mp4">
+</video>
+		</div>
+		<div class="card">
+		<img src="vid\download.png" >
+		</div>
+		</div>
+		
+		<div class="sidebar">
+		<img src="vid\up.jpg" id="uparrow"><center><font color="shadowghost" size="5"><b>Enjoy</b></font></center>
+		<img src="vid\down.jpg" id="downarrow">
+		
+		</div>
+		<div class="sidebar1">
+		<center>TREE HOUSE Video Store</center>
+		</div>
+	</div></center>
+</div>
+
+
+<script>
+var slide = document.getElementById("slide");
+var uparrow = document.getElementById("uparrow");
+var downarrow = document.getElementById("downarrow");
+
+let x = 0;
+
+ uparrow.onclick = function(){
+	if(x > "-7200"){
+	x = x - 600;
+	slide.style.top = x + "px";
+	}
+ }
+
+downarrow.onclick = function(){
+	if(x < 0){
+	x = x + 600;
+	slide.style.top = x + "px";
+	}
+ }
+
+
+</script>
+
+</body></html>
