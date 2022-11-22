@@ -10,7 +10,7 @@
 	
 }
 .review-box{ 
-	width: 28%;
+	width: 25%;
 	height: 538px;
 	border-radius: 10px;
 	box-shadow: -10px 10px 40px rgba(0,0,0,0.25);
@@ -144,8 +144,8 @@ a.btn7:hover{
 .container{
 	width: 100%;
 	min-height: 100vh;
-	padding-left:8%;
-	padding-right: 8%;
+	padding-left:1%;
+	padding-right: 1%;
 	box-sizing: border-box;
 	overflow: hidden;
 }
