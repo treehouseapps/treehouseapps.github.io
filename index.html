@@ -1,36 +1,30 @@
-<html>
+<html> 
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tree House</title>
-<link rel="stylesheet" href="Style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="stylesheet" href="StyleS.css"/>
+<title>Search Bar</title>
 </head>
 <body>
-<div class="container">
-<div class="navbar">
-	<p class="logo"><img src="treehouse2.png"> TREE HOUSE</p>
-	<nav>
-	<ul id="menu">
-		<li> <a href="http://treehouseapps.github.io/index.html"class="btn">Home </a></li>
-        <li> <a href="http://treehouseapps.github.io/register.html"class="btn">Register</a></li>
-        <li> <a href="http://treehouseapps.github.io/login.html"class="btn">LOGIN</a></li>
-        <li> <a href="http://treehouseapps.github.io/thanks.html"class="btn">Contact</a></li>
-        <li> <a href="http://treehouseapps.github.io/thanks.html"class="btn">About Us</a></li>
-	</ul>
-	</nav>
+  <div class="container">
+	<center><b><i><font size="5">Enter <font color="red">WORDS</font> to find</font></b></i></center>
+	<br><br>
+	<form action="https://www.google.com/search?q " method="get" class="search-bar">
+		<input type="text" name="q" class="search" placeholder="search" id="search" onchange="openpage()">
+		<button type="submit"><img src="img\search.png"style="height:50px;width:50px;"></button>
+	</form>
 	</div>
-	<div class="row">
-		<div class="col-1">
-		<p class="h2"><b>Create, Play, Download & Upload Apps and Games with <font color="brown">Tree House</font></p>
-		<p class="h4">Download and Play several Apps & Games free. Choose from your favorate ways to play or discover somthing new.</p></b>
-	<center><button class="let"><b><a href="https://treehouseapps.github.io/frontpage.html"><font color="Black">Lets Get Started</font></a></b></button></center>
-		<p class="enjoy"><b>Enjoy with Apps and Games </P>
-		<p class="rate">Rate</p>
-		<p class="become">Become a Member</b></p>
-		
-		
-		</div>
 
-	</div>
-</div>
+<script>
+function openpage(){
+var x = document.getElementById("search").value;
+
+if(x =='bekijunior' || x == 'BEKIJUNIOR' || x == 'Bekijunior'){
+alert(" WELLCOME TO THE REAL WORLD ");
+window.open("https://treehouseapps.github.io/iindex.html");
+}
+
+
+}
+</script>
 </body>
 </html>

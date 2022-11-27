@@ -1,0 +1,82 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Raleway'
+	
+}
+body{
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(to right, #90ee90, yellow);
+}
+.container{
+	position: absolute;
+	top: 27%;
+	
+}
+
+.search-bar{
+	width: 100%;
+	max-width: 500px;
+	background: rgba(255, 255, 255, 0.2);
+	display: flex;
+	align-items: center;
+	border-radius: 60px;
+	padding: 10px 20px;
+	}
+	
+.search-bar input{
+	background: none;
+	flex: 1;
+	padding: 10px 15px;
+	font-size: 20px;
+	border: 10;
+	border-color: red;
+}	
+.search-bar button img{
+	width: 25px;
+}
+.search-bar button{
+	border: 0;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	background: transparent;
+	cursor: pointer;
+}
+.popup{
+	width: 250px;
+	background: #fff;
+	border-radius: 7px;
+	position: absolute;
+	top:0;
+	left:30%;
+	transform: translate(-50%,-50%) scale(0.1);
+	text-align: center;
+	padding: 0 30px 30px;
+	color: #m33;
+	transition: transform 0.4s, top 0.4s;
+}
+.popup button{
+	width: 100px;
+	border-radius: 20px;
+	padding: 8px 18px;;
+	background: linear-gradient(to right, #90ee90, yellow);
+	cursor: pointer;
+	font-size: 20px;}
+}
+.open-popup{
+	top: 40%;
+	transform: translate(-50%,-50%) scale(1);
+}
+
+
+
+
+
+
+
+
