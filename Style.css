@@ -5,7 +5,6 @@
 }
 .container{
 	width: 100%;
-	min-height: 100vh;
 	padding-left:1%;
 	padding-right: 1%;
 	box-sizing: border-box;
@@ -106,19 +105,19 @@ a.btn:hover{
 
 .enjoy{
 	font-size: 25px;
-	position: absolute; top: 130%;
-	left: 10%;
+	position: absolute; top: 90%;
+	left: 35%;
 }
 .rate{
 	font-size: 25px;
-	position: absolute; top: 130%;
+	position: absolute; top: 90%;
 	left: 45%;
 	color: red;
 	}
 .become{
 	font-size: 25px;
-	position: absolute; top: 130%;
-	left: 58%;
+	position: absolute; top: 90%;
+	left: 55%;
 }
 .apps { 
 	width: 180px;
