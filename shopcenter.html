@@ -28,3 +28,30 @@
 </html>
     
     
+<?php
+if(isset($_POST['update']))
+{
+    //connection
+    $conn = mysqli_connect('localhost', 'beki', 'junior', 'beki');
+    if($conn->connect_error){
+        die('Connection faild '.$conn->connect_error);}
+   // get values form input text and number
+   
+   $id = $_POST['id'];
+   $value = $_POST['total'];
+           
+   // mysql query to Update data
+   $query = "UPDATE `payment` SET `value`='".$value."' WHERE `id` = $id";
+   
+   $result = mysqli_query($conn, $query);
+   
+   if($result)
+   {
+       echo 'Data Updated';
+   }else{
+       echo 'Data Not Updated';
+   }
+   mysqli_close($conn);
+}
+
+?>
