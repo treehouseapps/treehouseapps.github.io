@@ -14,7 +14,7 @@
 	        padding: 0;
         }
         .navbar.navbar-expand-md{
-            max-height: 67px;
+            max-height: 65px;
             background: linear-gradient(to right, #90ee90, yellow);
         }
         .display-4{
@@ -22,6 +22,43 @@
             margin-top: 100px; 
             margin-left: 20px;
             font-size: 70px;
+        }
+        @media (max-width:390px){
+            .display-4{
+            font-family: "Times New Roman", Times, serif;
+            margin-top: 40px; 
+            margin-left: 20px;
+            font-size: 35px;
+            }
+            .collapse.navbar-collapse{
+                margin-top: 10px;
+                font-weight: bolder;
+                border: none;
+                padding: 5px;
+                border-radius: 7px 15px 15px 10px;
+                max-width: fit-content;
+                background-color: rgba(255, 255, 255, 0.897);
+                transition: .4s;
+            }
+            .btn.btn-outline-dark{
+                font-weight: bolder;
+                border: none;
+                font-family: 'Crimson Text', serif;
+            }
+            .h4{
+            font-family: 'Alkatra', cursive;
+            padding-left: 7%;
+            padding-right: 7%;
+            font-size: medium;
+        }
+        .btn-lg{
+            font-size: 15px;
+            border: 1px solid black;
+            background-color: #90ee90;
+        }
+        h3{
+            font-size: 20px;
+        }
         }
         .h4{
             font-family: 'Alkatra', cursive;
@@ -36,7 +73,9 @@
         }
         .navbar-toggler{
             margin-right: 7px;
+            max-width: 50px;
         }
+       
     </style>
 </head>
 <body>
@@ -55,7 +94,7 @@
         <li class="nav-item pe-2"> 
             <a href="http://treehouseapps.github.io/iindex.html"class="btn btn-outline-dark"> Register </a></li>
         <li class="nav-item pe-2"> 
-            <a href="http://treehouseapps.github.io/iindex.html"class="btn btn-outline-dark"> LOGIN </a></li>
+            <a href="http://treehouseapps.github.io/iindex.html"class="btn btn-outline-dark"> Login </a></li>
         <li class="nav-item pe-2"> 
             <a href="http://treehouseapps.github.io/iindex.html"class="btn btn-outline-dark"> Contact </a></li>
         <li class="nav-item pe-2"> 
