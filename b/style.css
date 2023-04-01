@@ -74,7 +74,7 @@
             margin-top: 1%;
             border: 1px solid rgb(189, 133, 51);
             border-radius: 20px;
-            background: rgb(206, 205, 205);
+            background: lightgray;
         }
         .choose{
             font-weight: bolder;
@@ -147,6 +147,37 @@
                 font-family: 'Libre Baskerville', serif;
             }
         }
+        .md3{
+            margin:20px;
+        }
+
+.stats{
+
+      background: #f2f5f8 !important;
+    color: #000 !important;
+}
+.articles{
+  font-size:10px;
+  color: #a1aab9;
+}
+.number1{
+  font-weight:500;
+}
+.followers{
+    font-size:10px;
+  color: #a1aab9;
+
+}
+.number2{
+  font-weight:500;
+}
+.rating{
+    font-size:10px;
+  color: #a1aab9;
+}
+.number3{
+  font-weight:500;
+}
 
 
 
