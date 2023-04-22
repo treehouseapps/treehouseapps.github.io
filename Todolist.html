@@ -1,0 +1,26 @@
+<html>
+<body>
+
+<center> <h2> to do list </h2>
+<input id="inp">
+<button id="btn" onclick="add()">Click me </button>
+<div id="con">
+
+</div></center>
+</body>
+</html>
+<script>
+
+let inp = document.getElementById("inp");
+let con = document.getElementById("con");
+let btn = document.getElementById("btn");
+
+function add(){
+	let p = document.createElement("p");
+	p.innerHTML = inp.value;
+	con.appendChild("p");
+}
+console.log("hey");
+
+
+</script>
