@@ -50,6 +50,22 @@ function showNotes() {
         addBox.insertAdjacentHTML("afterend", liTag);
     });
 }
+    const textfield = document.getElementById("words");
+    const Wordcount = document.getElementById("counter");
+    const clearbtn = document.getElementById("clr");
+
+    function countword(){
+      let text = textfield.value;
+      text = text.trim();
+      const words = text.split(" ");
+      if(text === ""){
+        Wordcount.innerText = "0";
+      } else{
+
+        Wordcount.innerText = words.length;
+
+      }
+    } 
 showNotes();
 
 function showMenu(elem) {

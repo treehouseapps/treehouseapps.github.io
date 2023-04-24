@@ -230,6 +230,12 @@ form button{
   border-radius: 4px;
   background: #6A93F8;
 }
+h4{
+  font-weight: normal;
+}
+.count, h4, p{
+  display: inline;
+}
 
 @media (max-width: 660px){
   .wrapper{
