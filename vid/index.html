@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      input{
+        border: none;
+        text-align: center;
+        font-size: 50px;
+        color: blue;
+      }
+      button{
+        background-color: skyblue;
+        border: 1px solid lightgray;
+        padding: 5px;
+        border-radius: 10px;
+        width: 100px;
+      }
+    </style>
+</head>
+<body> <center>
+  <h1> <u> Counter </u></h1>
+  <input type="text" id="no" value="7"><br><br>
+  <button onclick="i()">Increase</button> <button onclick="r()">reset</button> <button onclick="d()">Decrease</button>
+</center>
+</body>
+</html>
+<script>
+  var a = document.getElementById("no");
+  function i(){
+    a.value = a.value + '1';
+  }
+  function r(){
+    a.value = "0";
+  }
+  function d(){
+    a.value = a.value - 1;
+  }  
+</script>
