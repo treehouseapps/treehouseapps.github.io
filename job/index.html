@@ -24,7 +24,8 @@
             </div>
             <div class="row description">
               <label>Description</label>
-              <textarea spellcheck="false"></textarea>
+              <textarea spellcheck="true" id="words" onkeyup="countword()" onpaste="countword()"></textarea>
+              <h4>words :</h4><p id="counter"> </p>
             </div>
             <button></button>
           </form>
