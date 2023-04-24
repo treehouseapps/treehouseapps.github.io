@@ -233,6 +233,9 @@ form button{
 h4{
   font-weight: normal;
 }
+.count, h4, p{
+  display: inline;
+}
 
 @media (max-width: 660px){
   .wrapper{
