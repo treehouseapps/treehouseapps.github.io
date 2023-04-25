@@ -74,23 +74,23 @@
 </body>
 </html>
 <script>
-  var a = document.getElementById("no");
-  var b = document.getElementById("bi");
+  var count = document.getElementById("no");
+  var payment = document.getElementById("bi");
+  
+  var bill = 0;
   function i(){
-    if(a.value == 5) {
-    for(var i=0; i<10; i++){
-    b.value++;
+    if(count.value == 5) {
+      bill = bill + 10;
+    payment.value = bill;
+    count.value = 0;
+    
+  alert("$10 added to ur account");
   }
-  alert("$10 added to ur Bill")
-    a.value--;
-    a.value--;
-    a.value--;
-    a.value--;
-    a.value--;
-  }else {
-    a.value++;
-  }}
+  else {
+    count.value++;
+  }
+  }
   function r(){
-    a.value = "0";
+    count.value = 0;
   }
 </script>
