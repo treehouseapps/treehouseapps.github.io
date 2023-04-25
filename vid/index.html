@@ -6,26 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+      h1{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        letter-spacing: 2px;
+      }
       input{
         border: none;
         text-align: center;
         font-size: 50px;
-        color: skyblue;
+        font-weight: bold;
+        color: rgb(67, 214, 67);
       }
       button{
-        background-color: skyblue;
-        border: 1px solid lightgray;
+        background-color: white;
+        border: 1px solid black;
         padding: 5px;
-        border-radius: 10px;
-        width: 120px;
-        height: 50px;
+        border-radius: 7px;
+        margin-left: 3px;
+        margin-right: 3px;
+        width: 100px;
+        font-size: small;
+      }
+      button:hover{
+        border: 1px solid blue;
       }
     </style>
 </head>
 <body> <center>
-  <h1> <u> Counter </u></h1>
-  <input type="text" id="no" value="0"><br><br>
-  <button onclick="i()">Increase</button> <button onclick="r()">reset</button> <button onclick="d()">Decrease</button>
+  <h1>  Counter </h1>
+  <input type="text" id="no" value="3"><br><br>
+  <button onclick="d()">DECREASE</button>
+  <button onclick="r()">RESET</button> 
+  <button onclick="i()">INCREASE</button> 
 </center>
 </body>
 </html>
