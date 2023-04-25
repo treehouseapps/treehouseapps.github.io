@@ -64,12 +64,18 @@
 <script>
   var a = document.getElementById("no");
   function i(){
+    if(a.value > 4 || a.value < -5) {
+    alert("yes");
+  }else {
     a.value++;
-  }
+  }}
   function r(){
     a.value = "0";
   }
   function d(){
+    if(a.value > 4 || a.value < -4) {
+    alert("yes");
+  }else {
     a.value = a.value - 1;
-  }  
+  } }
 </script>
