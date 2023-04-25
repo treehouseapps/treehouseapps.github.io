@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,13 +49,24 @@
         font-size: 70px;
       }
       }
+      .bill{
+        font-size: 32px;
+        color: black;
+        width: 40px;
+      }
+      p{
+        color: black;
+        font-size: 30px;
+        font-weight: bold;
+      }
     </style>
 </head>
 <body> <center>
   <div class="container">
   <h1>  Counter </h1>
+  <div class="co">
+  <p>Your bill is  $<input class="bill" type="text" id="bi" value="0"></p> </div>
   <input type="text" id="no" value="0"><br>
-  <button onclick="d()">DECREASE</button>
   <button onclick="r()">RESET</button> 
   <button onclick="i()">INCREASE</button> 
 </div>
@@ -63,19 +75,20 @@
 </html>
 <script>
   var a = document.getElementById("no");
+  var b = document.getElementById("bi");
   function i(){
     if(a.value == 5) {
-    alert("Buy Premium !");
+    for(var i=0; i<10; i++){
+    b.value++;}
+    a.value--;
+    a.value--;
+    a.value--;
+    a.value--;
+    a.value--;
   }else {
     a.value++;
   }}
   function r(){
     a.value = "0";
   }
-  function d(){
-    if(a.value == -5) {
-    alert("Buy Premium !");
-  }else {
-    a.value = a.value - 1;
-  } }
 </script>
