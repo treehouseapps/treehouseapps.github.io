@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      h1{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        letter-spacing: 5px;
+        margin-top: 80px;
+        font-size: 60px;
+        color: rgb(48, 48, 194);
+      }
+      input{
+        font-size: 70px;
+        border: none;
+        text-align: center;
+        font-weight: bold;
+        color: rgb(67, 214, 67);
+        width: 70px;
+      }
+      button{
+        letter-spacing: 3px;
+        background-color: rgb(243, 239, 239);
+        border: 1px solid black;
+        padding: 10px;
+        margin: 50px 10px;
+        border-radius: 7px;
+        width: max-content;
+        font-size: 30px;
+      }
+      button:hover{
+        border: 1px solid blue;
+      }
+      @media screen and (min-device-width: 333px) and (max-device-width: 539px){
+      button{
+        display: block;
+        margin-top: 25px;
+        font-size: 27px;
+      }
+      h1{
+        margin-top: 70px;
+        font-size: 50px;
+      }
+      input{
+        font-size: 70px;
+      }
+      }
+    </style>
+</head>
+<body> <center>
+  <div class="container">
+  <h1>  Counter </h1>
+  <input type="text" id="no" value="0"><br>
+  <button onclick="d()">DECREASE</button>
+  <button onclick="r()">RESET</button> 
+  <button onclick="i()">INCREASE</button> 
+</div>
+</center>
+</body>
+</html>
+<script>
+  var a = document.getElementById("no");
+  function i(){
+    a.value++;
+  }
+  function r(){
+    a.value = "0";
+  }
+  function d(){
+    a.value = a.value - 1;
+  }  
+</script>
