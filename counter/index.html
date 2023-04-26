@@ -48,6 +48,9 @@
       input{
         font-size: 70px;
       }
+      p{
+        display: block;
+      }
       }
       .bill{
         font-size: 32px;
@@ -58,6 +61,11 @@
         color: black;
         font-size: 30px;
         font-weight: bold;
+        display: inline;
+      }
+      .ow{
+        color: rgb(255, 0, 0);
+        font-size: large;
       }
     </style>
 </head>
@@ -65,30 +73,39 @@
   <div class="container">
   <h1>  Counter </h1>
   <div class="co">
-  <p>Your bill is  $<input class="bill" type="text" id="bi" value="0"></p> </div>
-  <input type="text" id="no" value="0"><br>
+  <p>Your bill is  $<input class="bill" type="text" id="bi" value="0">
+  <br><p class="ow" id="ow"></p></p> </div>
+  <input id="no" value="0"> </input><br>
   <button onclick="r()">RESET</button> 
-  <button onclick="i()">INCREASE</button> 
+  <button onclick="s()">START</button> 
 </div>
 </center>
+
 </body>
 </html>
+
 <script>
   var count = document.getElementById("no");
   var payment = document.getElementById("bi");
+  var warn = document.getElementById("ow");
   
   var bill = 0;
-  function i(){
-    if(count.value == 5) {
-      bill = bill + 10;
-    payment.value = bill;
+  function s(){
+    setInterval(function(){
+    do{
+  count.value++;}
+  while (count.value > 6)
+  if(count.value == 6){
     count.value = 0;
-    
-  alert("$10 added to ur account");
+    bill = bill + 10; 
+    payment.value = bill;
   }
-  else {
-    count.value++;
+  if (bill > 10){
+    payment.style.color = "red";
+    warn.innerHTML = "Dude it is increasing just pay !";
   }
+
+}, 1000);
   }
   function r(){
     count.value = 0;
