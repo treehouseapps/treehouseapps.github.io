@@ -5,69 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-      h1{
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        letter-spacing: 5px;
-        margin-top: 80px;
-        font-size: 60px;
-        color: rgb(48, 48, 194);
-      }
-      input{
-        font-size: 70px;
-        border: none;
-        text-align: center;
-        font-weight: bold;
-        color: rgb(67, 214, 67);
-        width: 250px;
-      }
-      button{
-        letter-spacing: 3px;
-        background-color: rgb(243, 239, 239);
-        border: 1px solid black;
-        padding: 10px;
-        margin: 50px 10px;
-        border-radius: 7px;
-        width: max-content;
-        font-size: 30px;
-      }
-      button:hover{
-        border: 1px solid blue;
-      }
-      @media screen and (min-device-width: 333px) and (max-device-width: 539px){
-      button{
-        display: block;
-        margin-top: 25px;
-        font-size: 27px;
-      }
-      h1{
-        margin-top: 70px;
-        font-size: 50px;
-      }
-      input{
-        font-size: 70px;
-      }
-      p{
-        display: block;
-      }
-      }
-      .bill{
-        font-size: 32px;
-        color: black;
-        width: 40px;
-      }
-      p{
-        color: black;
-        font-size: 30px;
-        font-weight: bold;
-        display: inline;
-      }
-      .ow{
-        color: rgb(255, 0, 0);
-        font-size: large;
-      }
-    </style>
+    <link rel="stylesheet" href="Style.css">
+    <title>Counter</title>
 </head>
 <body> <center>
   <div class="container">
@@ -76,38 +15,42 @@
   <p>Your bill is  $<input class="bill" type="text" id="bi" value="0">
   <br><p class="ow" id="ow"></p></p> </div>
   <input id="no" value="0"> </input><br>
+  <button onclick="r()">PAY</button> 
   <button onclick="s()">START</button> 
-  <button onclick="r()">RESET</button> 
 </div>
 </center>
 
 </body>
 </html>
-
 <script>
   var count = document.getElementById("no");
-  var payment = document.getElementById("bi");
-  var warn = document.getElementById("ow");
-  
-  var bill = 0;
-  function s(){
-    setInterval(function(){
-    do{
-  count.value++;}
-  while (count.value > 6)
-  if(count.value == 6){
-    count.value = 0;
-    bill = bill + 10; 
-    payment.value = bill;
-  }
-  if (bill > 10){
-    payment.style.color = "red";
-    warn.innerHTML = "Dude it is increasing just pay !";
-  }
+var payment = document.getElementById("bi");
+var warn = document.getElementById("ow");
+
+var bill = 0;
+function s(){
+  setInterval(function(){
+  do{
+count.value++;}
+while (count.value > 6)
+if(count.value == 6){
+  count.value = 0;
+  bill = bill + 10; 
+  payment.value = bill;
+}
+if (bill > 10){
+  payment.style.color = "red";
+  warn.innerHTML = "Dude it is increasing just pay !";
+}
+else if (bill < 10){
+  payment.style.color = "black";
+}
 
 }, 1000);
-  }
-  function r(){
-    count.value = 0;
-  }
+}
+function r(){
+  payment.value = 0;
+  bill = 0;
+  warn.innerHTML = "";
+}
 </script>
