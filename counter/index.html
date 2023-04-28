@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Counter</title>
+</head>
+<body> <center>
+  <div class="container">
+  <h1>  Counter </h1>
+  <div class="co">
+  <p>Your bill is  $<input class="bill" type="text" id="bi" value="0">
+  <br><p class="ow" id="ow"></p></p> </div>
+  <input id="no" value="0"> </input><br>
+  <button onclick="r()">PAY</button> 
+  <button onclick="s()">START</button> 
+</div>
+</center>
+</body>
+</html>
+<script>
+  var count = document.getElementById("no");
+var payment = document.getElementById("bi");
+var warn = document.getElementById("ow");
+
+var bill = 0;
+function s(){
+  const hi = setInterval(function()
+  { count.value++;
+    if(count.value == 6){
+        alert("$10 added to your bill")
+        bill = bill + 10; 
+        payment.value = bill;
+        count.value = 0;
+        clearInterval(hi);
+    
+        if(bill > 10){
+          payment.style.color = "red";
+          warn.innerHTML = "Dude it is increasing just pay !";
+        }  
+    }  
+  }, 1000);
+
+}
+function r(){
+  if(payment.value > 5){
+  payment.value = 0;
+  bill = 0;
+  warn.innerHTML = "";
+  alert("finally ... Bill Payed");
+  payment.style.color = "black";
+}
+else{ alert("Relax man ... there is no bill to pay"); }
+}
+</script>
