@@ -1,30 +1,47 @@
-body{
-  background-color: lightgray;
-  margin: auto;
-  text-align: center;
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.p1, .p2{
-    background-color: white;
+
+.p1,
+.p2 {
+    margin-bottom: 50px;
+    margin-top: 30px;
     border: 2px solid blue;
-    border-radius: 20px;
-    height: 350px;
-    width: 250px;
     padding: 10px;
-    margin: 40px 40px;
-  }
-  .p2{
+    border-radius: 20px;
+}
+
+.p2 {
     border-color: green;
     color: black;
-  }
-  h2{
+    min-width: 290px;
+}
+
+h1 {
+    border: 1px solid darkorange;
+    border-radius: 20px;
     color: darkorange;
-    border: 1px solid red;
-    border-radius: 50px;
-  }
-  p{
+    margin-top: 20px;
+    font-size: x-larger;
+}
+
+p {
     color: skyblue;
-  }
-  button{
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+input {
+    min-height: 50px;
+    border-color: gray;
+    text-align: top;
+    min-width: 150px;
+}
+
+.button {
     padding: 10px;
     width: 70px;
     color: white;
@@ -33,12 +50,52 @@ body{
     border: 1px solid blue;
     border-radius: 10px;
     margin-top: 80px;
-  }
-  input{
-    min-height: 50px;
-    border-color: gray;
-    text-align: top;
-  }
-  .i{
+    margin-bottom: 20px;
+}
+
+.btnn {
+    padding: 10px;
+    width: 100px;
+    color: white;
+    font-size: 15px;
+    background-color: black;
+    border: 1px solid blue;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.btnn:hover,
+.button:hover {
+    transition: .3s;
+    box-shadow: 3px 3px 5px 3px yellow;
+}
+
+
+h3 {
+    color: red;
+    margin-bottom: 30px;
+}
+
+.p {
     color: black;
-  }
+    width: 25px;
+    list-style-type: upper-latin;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    transition: .5s;
+    margin-bottom: 100px;
+}
+
+a:hover {
+    background-color: white;
+    border: 1px solid gray;
+    padding: 5px;
+    padding-left: 5px;
+    color: black;
+    border-radius: 5px;
+    border-left-width: 7px;
+}
