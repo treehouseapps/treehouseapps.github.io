@@ -1,20 +1,25 @@
 <html>
+
 <body>
 
-<center> <h2> to do list </h2>
-<input id="inp">
-<button id="btn" onclick="add()">Click me </button>
-<div id="con">
+	<center>
+		<h2> to do list </h2>
+		<input id="inp">
+		<button id="btn" onclick="add()">Click me </button>
+		<div id="con">
 
-</div></center>
+		</div>
+	</center>
 </body>
+
 </html>
+
 <script>
-function add(){
-var inp = document.getElementById("inp");
-	let p = document.createElement("p");
-	p.innerHTML = inp.value;
-	con.appendChild(p);
-}
+	function add() {
+		var inp = document.getElementById("inp");
+		let p = document.createElement("p");
+		p.innerHTML = inp.value;
+		con.appendChild(p);
+	}
 
 </script>

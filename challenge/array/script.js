@@ -7,16 +7,14 @@ function insert() {
     alert("Wat chu doin ");
   } else {
     array.push(input.value);
-    // alert("Submitted.... ");
+    alert("Submitted.... ");
     input.value = "";
   }
 }
 function view() {
-
-  var nHTML = "";
-
   array.forEach(function (item) {
-    nHTML += '<a href="#">' + item + '<br>';
+    let p = document.createElement("p");
+    p.innerHTML = item;
+    con.appendChild(p);
   });
-  list.innerHTML = '<ul>' + nHTML + '</ul>';
 }
