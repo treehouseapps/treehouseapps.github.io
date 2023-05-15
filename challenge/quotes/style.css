@@ -42,11 +42,20 @@ button {
 }
 
 @media only screen and (max-width: 400px) {
+    body {
+        background-color: blue;
+    }
+
+    div {
+        height: 70%;
+    }
+
     h1 {
         font-size: 20px;
     }
 
     button {
         font-size: 15px;
+        height: 10%;
     }
 }
