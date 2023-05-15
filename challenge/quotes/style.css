@@ -1,18 +1,26 @@
+* {
+    border: ed 1px solid;
+}
+
 body {
-    padding: 30px;
-    background-color: rgb(196, 196, 207);
+    background-color: rgb(179, 250, 179);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 div {
     background-color: white;
     border: 2px blue solid;
     border-radius: 30px;
-    max-width: 70%;
+    min-width: 70%;
+    margin-top: 50px;
 }
 
 p {
     color: red;
     font-size: x-large;
+    max-width: 90%;
 }
 
 i {
@@ -21,41 +29,22 @@ i {
 }
 
 h1 {
-    color: green;
+    color: darkorange;
     border: 1px solid black;
     width: max-content;
-    padding: 20px;
+    padding: 10px;
     border-radius: 20px;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 button {
-    padding: 10;
-    border: blue 1px solid;
+    color: white;
+    padding: 10px;
+    border: 1px solid;
     border-radius: 10px;
     background-color: rgb(238, 7, 238);
     font-weight: bolder;
     font-size: 20px;
     margin-bottom: 30px;
     margin-top: 20px;
-    max-width: 70%;
-}
-
-@media (max-width:390px) {
-    body {
-        background-color: blue;
-    }
-
-    div {
-        height: 70%;
-    }
-
-    h1 {
-        font-size: 20px;
-    }
-
-    button {
-        font-size: 15px;
-        height: 10%;
-    }
 }
