@@ -1,88 +1,19 @@
 <html>
-  <head>
-    <style>
-    body{
-    	max-width: 400px;
-    }    	    	
-    div{
-        border: 2px blue solid;
-        border-radius : 30px;
-      }
-      p{
-        color:red;
-        font-size: x-large;
-      }
-      i{
-      	color: gray;
-      	margin-top: 10px;
-      }
-      h1{
-      	color: darkorange;
-      	border: 1px solid black;
-      	width: max-content;
-      	padding: 20px;
-      	border-radius: 20px;
-      }
-      button{
-      	color: brown;
-      	border: green 1px solid;
-      	background-color: white;
-      	font-weiht: bolder;
-      	font-size: 20px;
-      	margin-bottom: 30px;
-      	margin-top: 20px;
-      }
-    </style>
-  </head>
-  <body>
-    <center><br><br><br>
-    <div>
-    <h1>Quote list</h1>
-    <p id="result"></p><br>
-    <i id="autor"></i>
-    <button onclick="fun()">New Quote</button>
-    </center></div>
-  </body>
-</html>
-<script>
-var quote = [
-  'Wataguan Man',
-  'Come to Dubai',
-  'Hello world',
-  'Boom shaka laka',
-  'ay yoo is yo hommie bbeki junior',
-  'Astalavista',
 
-]
-var aut = [
-  'Legend', 'says'
-  ]
-function fun(){
-  var rq = Math.floor(Math.random() * (quote.length));
-  var a = document.getElementById("result");
-  a.innerHTML = quote[rq];
-  
-  if(a.innerHTML == "Hello world"){
-    document.getElementById("autor").innerHTML = " <i> Known code print </i><br><br>";}
-    
-   else if(a.innerHTML == "Wataguan Man"){
-    document.getElementById("autor").innerHTML = " <i> Comedian tomas  </i><br><br>";}
-   
-    else if(a.innerHTML == "Come to Dubai"){
-    document.getElementById("autor").innerHTML = " <i> Random Arab </i><br><br>";}
-      
-      else if(a.innerHTML == "Boom shaka laka"){
-    document.getElementById("autor").innerHTML = " <i> Random Rege </i><br><br>";}
-        else if(a.innerHTML == "Astalavista"){
-    document.getElementById("autor").innerHTML = " <i> From rio movie </i><br><br>";}
-           else if(a.innerHTML == "ay yoo is yo hommie bbeki junior"){
-    document.getElementById("autor").innerHTML = " <i> Unknown random thought </i><br><br>";}
-           
-    
-    else {
-    	document.getElementById("autor").innerHTML ="";
-    }
-}
-</script>
-    
-    
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <center><br><br><br>
+    <div>
+      <h1>Quotes list</h1>
+      <p id="result"></p><br>
+      <i id="autor"></i><br>
+      <button onclick="fun()">New Quote</button>
+  </center>
+  </div>
+</body>
+<script src="script.js"></script>
+
+</html>
