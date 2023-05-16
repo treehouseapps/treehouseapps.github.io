@@ -168,7 +168,12 @@ section {
     .navbar-brand {
         font-size: large;
     }
-
+    .nav-link {
+        margin-left: 5%;
+    }
+    .nav-item svg {
+       display: none; 
+    }
     .tech {
         margin-top: 20%;
         letter-spacing: 3px;
