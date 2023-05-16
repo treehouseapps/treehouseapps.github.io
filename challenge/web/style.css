@@ -153,7 +153,6 @@ section {
 }
 
 @media (max-width:390px) {
-    *{border: 1px blue solid;}
     .coverimg {
         background-image: url("02.jpg");
         background-repeat: no-repeat;
