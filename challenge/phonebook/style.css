@@ -41,9 +41,10 @@ h3 {
     margin-right: 20px;
 }
 
-.sec2 #ph {
+.sec2 h5 {
     padding-left: 10px;
 }
+
 
 @media (max-width:390px) {
 
