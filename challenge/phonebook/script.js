@@ -18,9 +18,13 @@ function save() {
     var y_val = y;
     let p = document.createElement("p");
     p.innerHTML = y_val;
-    na.appendChild(p);
     var z_val = z;
     let q = document.createElement("p");
+    let i = document.createElement('b');
     q.innerHTML = z_val;
+    i.innerHTML = '<font color="red">-________________-';
+    na.appendChild(i);
+    na.appendChild(p);
     na.appendChild(q);
+
 }
