@@ -11,7 +11,16 @@ function save() {
             number: phone.value
         }
     );
-
-    data.map(x => a.innerHTML = x.name);
-    data.forEach(x => b.innerHTML = x.number);
+    var y;
+    var z;
+    data.map(x => y = x.name);
+    data.forEach(x => z = x.number);
+    var y_val = y;
+    let p = document.createElement("p");
+    p.innerHTML = y_val;
+    na.appendChild(p);
+    var z_val = z;
+    let q = document.createElement("p");
+    q.innerHTML = z_val;
+    na.appendChild(q);
 }
