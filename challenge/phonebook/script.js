@@ -19,7 +19,7 @@ function save() {
     let p = document.createElement("p");
     p.innerHTML = y_val;
     var z_val = z;
-    let q = document.createElement("p");
+    let q = document.createElement("h5");
     let i = document.createElement('b');
     q.innerHTML = z_val;
     i.innerHTML = '<font color="red">-________________-';
