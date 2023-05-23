@@ -18,7 +18,7 @@ h3 {
     color: rgb(21, 129, 165);
 }
 
-.button {
+.btn {
     margin-top: 20px;
     background-color: rgb(25, 66, 177);
     border: none;
@@ -28,13 +28,26 @@ h3 {
     padding: 7px 10px;
 }
 
+.btnn {
+    background-color: rgb(25, 66, 177);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: medium;
+    padding: 4px 7px;
+}
+
 .h1 {
     color: black;
 }
 
+#contactDetail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .sec2 {
-    margin-top: 20px;
     border: 1px solid rgb(21, 129, 165);
     padding-left: 20px;
     margin-left: 20px;
