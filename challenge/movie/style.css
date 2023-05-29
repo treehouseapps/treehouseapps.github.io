@@ -205,33 +205,34 @@ li {
         margin-left: 7%;
     }
 
-    .box input {
-        display: none;
-        margin-right: 1%;
-
-    }
-
     .navbar .box {
-        margin-right: 1%;
-        max-width: 0px;
+        min-width: 180px;
+        height: 32px;
         margin-left: 10px;
         margin-right: 50px;
     }
 
     .box input {
-        display: none;
+        width: 140px;
+        height: 30px;
+        text-indent: 15px;
+        font-size: large;
     }
 
     .box img {
-        margin-left: 15%;
-        min-width: 40px;
-        min-height: 40px;
-        margin-right: 0px;
+        margin-left: 5px;
+        max-width: 25px;
+        max-height: 25px;
+        margin-right: 10px;
     }
 
     .navbar img {
         max-height: 40px;
         margin-right: 0px;
+    }
+
+    .navbar p {
+        display: none;
     }
 
     .g1 {
