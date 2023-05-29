@@ -1,6 +1,6 @@
 let hum = document.getElementById("hum");
-let g1 = document.getElementById("g1");
+let pp = document.getElementById("pp");
 
 hum.addEventListener("click", () => {
-    g1.classList.toggle('show');
+    pp.classList.toggle("pp")
 })
