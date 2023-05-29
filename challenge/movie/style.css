@@ -66,7 +66,7 @@ html {
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     cursor: pointer;
-
+    display: inline-flex;
 }
 
 .navbar p:hover {
@@ -186,7 +186,7 @@ li {
 
 }
 
-@media (max-width:390px) {
+@media (max-width:700px) {
     html {
         scroll-behavior: smooth;
     }
@@ -197,7 +197,7 @@ li {
 
     .navbar {
         max-width: 80%;
-        max-height: 50px;
+        max-height: 150px;
     }
 
     .navbar h2 {
@@ -205,33 +205,46 @@ li {
         margin-left: 7%;
     }
 
-    .box input {
-        display: none;
-        margin-right: 1%;
-
-    }
-
     .navbar .box {
-        margin-right: 1%;
-        max-width: 0px;
+        min-width: 180px;
+        height: 32px;
         margin-left: 10px;
         margin-right: 50px;
     }
 
     .box input {
-        display: none;
+        width: 140px;
+        height: 30px;
+        text-indent: 15px;
+        font-size: large;
     }
 
     .box img {
-        margin-left: 15%;
-        min-width: 40px;
-        min-height: 40px;
-        margin-right: 0px;
+        margin-left: 5px;
+        max-width: 25px;
+        max-height: 25px;
+        margin-right: 10px;
     }
 
     .navbar img {
         max-height: 40px;
         margin-right: 0px;
+    }
+
+    .navbar .p {
+        display: none;
+    }
+
+    .navbar .pp {
+        margin-top: 30%;
+        z-index: -100%;
+        background-color: rgb(73, 72, 72);
+        font-size: 15px;
+        position: absolute;
+        display: block;
+        padding-right: 2px;
+        min-width: 95%;
+
     }
 
     .g1 {
@@ -248,13 +261,12 @@ li {
         grid-template-columns: 0fr;
     }
 
-    .navbar p {
-        font-size: small;
-        margin-left: 4%;
-    }
-
     .b {
         margin-left: 0%;
+    }
+
+    .icon {
+        margin-left: 30px;
     }
 
     .b .poster {
@@ -296,9 +308,4 @@ li {
         display: block;
         margin-left: 5px;
     }
-
-    .icon {
-        margin-left: 30px;
-    }
-
 }
