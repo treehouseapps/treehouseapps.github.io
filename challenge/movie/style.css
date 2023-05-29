@@ -268,16 +268,15 @@ li {
         margin-top: 10px;
     }
 
-    .input input {
-        width: 2%;
+    .input .side {
         height: 40px;
+        width: 10px;
         background-color: rgb(79, 184, 79);
-        border: none;
     }
 
     .input {
         width: 50%;
-        height: 7%;
+        height: 40%;
         margin-top: 10px;
         margin-right: 15px;
         display: flex;
@@ -291,8 +290,7 @@ li {
     }
 
     .icon {
-        margin-left: 40px;
-        margin-right: 0px;
+        margin-left: 30px;
     }
 
 }
