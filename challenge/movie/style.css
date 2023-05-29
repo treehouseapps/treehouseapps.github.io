@@ -66,7 +66,7 @@ html {
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     cursor: pointer;
-
+    display: inline-flex;
 }
 
 .navbar p:hover {
@@ -197,7 +197,7 @@ li {
 
     .navbar {
         max-width: 80%;
-        max-height: 50px;
+        max-height: 150px;
     }
 
     .navbar h2 {
@@ -231,8 +231,20 @@ li {
         margin-right: 0px;
     }
 
-    .navbar p {
+    .navbar .p {
         display: none;
+    }
+
+    .navbar .pp {
+        margin-top: 30%;
+        z-index: -100%;
+        background-color: rgb(73, 72, 72);
+        font-size: 15px;
+        position: absolute;
+        display: block;
+        padding-right: 2px;
+        min-width: 95%;
+
     }
 
     .g1 {
@@ -249,13 +261,12 @@ li {
         grid-template-columns: 0fr;
     }
 
-    .navbar p {
-        font-size: small;
-        margin-left: 4%;
-    }
-
     .b {
         margin-left: 0%;
+    }
+
+    .icon {
+        margin-left: 30px;
     }
 
     .b .poster {
@@ -297,9 +308,4 @@ li {
         display: block;
         margin-left: 5px;
     }
-
-    .icon {
-        margin-left: 30px;
-    }
-
 }
