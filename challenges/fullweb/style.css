@@ -142,10 +142,12 @@
         text-indent: 30px;
         margin-right: 10px;
         word-spacing: 2px;
-        height: 200px;
-        overflow: hidden;
         font-size: 15px;
         margin-bottom: 20px;
+    }
+
+    p2 {
+        display: none;
     }
 
     .grid {
