@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Responsive Grid</title>
+    <title>Color Swapper</title>
 </head>
 
 <body>
@@ -14,7 +14,10 @@
     <div class="container">
         <center>
             <div class="main">
-                <div class="title">Hello world</div>
+                <div class="title">Color Swapper</div>
+                <p>Put a Simple Decrciption about your site here.
+                    the description has to be clear and easy to understand
+                </p>
                 <div class="box" id="box">
                     <div id="a" class="mini-box"></div>
                     <div id="b" class="mini-box"></div>
@@ -22,32 +25,18 @@
                     <div id="d" class="mini-box"></div>
                     <div id="e" class="mini-box"></div>
                     <div id="f" class="mini-box"></div>
-                    <div id="g" class="mini-box"></div>
-                    <div id="h" class="mini-box"></div>
-                    <div id="i" class="mini-box"></div>
                 </div>
-                <div class="toggle-box" id="toggle" onclick="toggled()"><img src="off.png"></div>
             </div>
         </center>
+        <div class="toggle-box">
+            <div id="toggle" onclick="toggleFunction()">
+                <img src="off.jpg" alt="">
+            </div>
+            <p id="p">OFF</p>
+        </div>
     </div>
-    <script>
-        let a = false
-        var toggle = document.getElementById("toggle")
-        var img = toggle.querySelector("img")
-        function toggled() {
-            a = !a
-            let status = a ? img.src = "on.png" : img.src = "off.png"
-        }
-        var box = document.getElementById("box")
-        box.addEventListener("click", () => {
-            if (img.src == "on.png") {
-                let sample = event.target.innerHTML
-                let samplee = event.target
-                samplee.innerHTML = "Changed";
-            }
-        })
+    <script src="script.js"></script>
 
-    </script>
 </body>
 
 </html>
