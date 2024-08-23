@@ -1,13 +1,13 @@
 const addBox = document.querySelector(".add-box"),
-popupBox = document.querySelector(".popup-box"),
-popupTitle = popupBox.querySelector("header p"),
-closeIcon = popupBox.querySelector("header i"),
-titleTag = popupBox.querySelector("input"),
-descTag = popupBox.querySelector("textarea"),
-addBtn = popupBox.querySelector("button");
+    popupBox = document.querySelector(".popup-box"),
+    popupTitle = popupBox.querySelector("header p"),
+    closeIcon = popupBox.querySelector("header i"),
+    titleTag = popupBox.querySelector("input"),
+    descTag = popupBox.querySelector("textarea"),
+    addBtn = popupBox.querySelector("button");
 
 const months = ["January", "February", "March", "April", "May", "June", "July",
-              "August", "September", "October", "November", "December"];
+    "August", "September", "October", "November", "December"];
 const notes = JSON.parse(localStorage.getItem("notes") || "[]");
 let isUpdate = false, updateId;
 
@@ -16,7 +16,7 @@ addBox.addEventListener("click", () => {
     addBtn.innerText = "Add Note";
     popupBox.classList.add("show");
     document.querySelector("body").style.overflow = "hidden";
-    if(window.innerWidth > 660) titleTag.focus();
+    if (window.innerWidth > 660) titleTag.focus();
 });
 
 closeIcon.addEventListener("click", () => {
@@ -27,7 +27,7 @@ closeIcon.addEventListener("click", () => {
 });
 
 function showNotes() {
-    if(!notes) return;
+    if (!notes) return;
     document.querySelectorAll(".note").forEach(li => li.remove());
     notes.forEach((note, id) => {
         let filterDesc = note.description.replaceAll("\n", '<br/>');
@@ -50,28 +50,28 @@ function showNotes() {
         addBox.insertAdjacentHTML("afterend", liTag);
     });
 }
-    const textfield = document.getElementById("words");
-    const Wordcount = document.getElementById("counter");
-    const clearbtn = document.getElementById("clr");
+const textfield = document.getElementById("words");
+const Wordcount = document.getElementById("counter");
+const clearbtn = document.getElementById("clr");
 
-    function countword(){
-      let text = textfield.value;
-      text = text.trim();
-      const words = text.split(" ");
-      if(text === ""){
+function countword() {
+    let text = textfield.value;
+    text = text.trim();
+    const words = text.split(" ");
+    if (text === "") {
         Wordcount.innerText = "0";
-      } else{
+    } else {
 
         Wordcount.innerText = words.length;
 
-      }
-    } 
+    }
+}
 showNotes();
 
 function showMenu(elem) {
     elem.parentElement.classList.add("show");
     document.addEventListener("click", e => {
-        if(e.target.tagName != "I" || e.target != elem) {
+        if (e.target.tagName != "I" || e.target != elem) {
             elem.parentElement.classList.remove("show");
         }
     });
@@ -79,7 +79,7 @@ function showMenu(elem) {
 
 function deleteNote(noteId) {
     let confirmDel = confirm("Are you sure you want to delete this note?");
-    if(!confirmDel) return;
+    if (!confirmDel) return;
     notes.splice(noteId, 1);
     localStorage.setItem("notes", JSON.stringify(notes));
     showNotes();
@@ -99,16 +99,16 @@ function updateNote(noteId, title, filterDesc) {
 addBtn.addEventListener("click", e => {
     e.preventDefault();
     let title = titleTag.value.trim(),
-    description = descTag.value.trim();
+        description = descTag.value.trim();
 
-    if(title || description) {
+    if (title || description) {
         let currentDate = new Date(),
-        month = months[currentDate.getMonth()],
-        day = currentDate.getDate(),
-        year = currentDate.getFullYear();
+            month = months[currentDate.getMonth()],
+            day = currentDate.getDate(),
+            year = currentDate.getFullYear();
 
-        let noteInfo = {title, description, date: `${month} ${day}, ${year}`}
-        if(!isUpdate) {
+        let noteInfo = { title, description, date: `${month} ${day}, ${year}` }
+        if (!isUpdate) {
             notes.push(noteInfo);
         } else {
             isUpdate = false;
