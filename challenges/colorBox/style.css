@@ -13,7 +13,8 @@
 
 .main p {
     margin: 0px 3rem 2rem 3rem;
-    font-family: monospace;
+}
+.desc { font-family: monospace;
 }
 .box {
     display: grid;
