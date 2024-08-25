@@ -14,7 +14,7 @@
 .main p {
     margin: 0px 3rem 2rem 3rem;
 }
-.desc { font-family: serif;
+.desc { font-family: monospace;
 }
 .box {
     display: grid;
