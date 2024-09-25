@@ -7,7 +7,23 @@ myForm.addEventListener("submit", (event) => {
         myForm.submit();
     }
 });
-
+let iconn = false
+function pshow() {
+    iconn = !iconn
+    iconn ? picon.className = "bi bi-eye" : picon.className = "bi bi-eye-slash"
+    iconn ? password.type = "text" : password.type = "password"
+}
+function cpshow() {
+    iconn = !iconn
+    iconn ? cpicon.className = "bi bi-eye" : cpicon.className = "bi bi-eye-slash"
+    iconn ? cpassword.type = "text" : cpassword.type = "password"
+}
+function ip() {
+    picon.style.display = "block"
+}
+function icp() {
+    cpicon.style.display = "block"
+}
 function validateForm() {
     let isValid = true;
     const nameInput = document.getElementById("name");

@@ -1,0 +1,71 @@
+body {
+    background-color: whitesmoke;
+}
+
+.card-header:first-child {
+    box-shadow: 1px 1px 10px 1px gray;
+}
+
+.card {
+    box-shadow: 1px 2px 10px 1px gray;
+}
+
+#myForm {
+    display: grid;
+    align-items: center;
+}
+
+.selection {
+    display: inline-flex;
+    gap: 10px;
+}
+
+.from-group {
+    margin-bottom: 0rem;
+    padding: 0;
+}
+
+p {
+    color: red;
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+
+#password,
+#cpassword {
+    border: none;
+}
+
+.pass {
+    display: inline-flex;
+    align-items: center;
+    padding-right: 1rem;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+#picon,
+#cpicon {
+    display: none;
+}
+
+#date,
+#country {
+    width: fit-content;
+}
+
+input[type="file" i]::-webkit-file-upload-button {
+    background-color: white;
+    border: none;
+    margin-right: 1rem;
+    box-shadow: 1px 1px 5px 1px gray;
+}
