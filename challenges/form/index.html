@@ -9,6 +9,8 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -26,28 +28,30 @@
                         <form id="myForm">
                             <div class="form-group">
                                 <label for="name">Username </label>
-                                <input type="text" class="form-control" id="name" required>
+                                <input type="text" class="form-control shadow-none" id="name" required>
                                 <p id="ual"></p>
                             </div>
                             <div class="form-group">
                                 <label for="email">Email </label>
-                                <input type="email" class="form-control" id="email" required
+                                <input type="email" class="form-control shadow-none" id="email" required
                                     pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$"
                                     title="Please enter a valid email address.">
                                 <p id="eal"></p>
                             </div>
                             <div class="form-group">
                                 <label for="pass">Password</label>
-                                <div class="pass">
-                                    <input type="password" oninput="ip()" class="form-control" id="password" required>
+                                <div class="pass" id="pholder">
+                                    <input type="password" oninput="ip()" class="form-control shadow-none" id="password"
+                                        required>
                                     <i class="bi bi-eye-slash" id="picon" onclick="pshow()"></i>
                                 </div>
                                 <p id="pal"></p>
                             </div>
                             <div class="form-group">
                                 <label for="cPassword">Confirm Password </label>
-                                <div class="pass">
-                                    <input type="password" oninput="icp()" class="form-control" id="cpassword" required>
+                                <div class="pass" id="cpholder">
+                                    <input type="password" oninput="icp()" class="form-control shadow-none"
+                                        id="cpassword" required>
                                     <i class="bi bi-eye-slash" id="cpicon" onclick="cpshow()"></i>
                                 </div>
                                 <p id="cpal"></p>
@@ -70,12 +74,12 @@
                             </div>
                             <div class="form-group selection">
                                 <label for="date">Date Of Birth </label>
-                                <input type="date" class="form-control" id="date" required>
+                                <input type="date" class="form-control shadow-none" id="date" required>
                                 <p id="dal"></p>
                             </div>
                             <div class="form-group selection">
                                 <label for="country">Country </label>
-                                <select class="form-control" name="country" id="country">
+                                <select class="form-control shadow-none" name="country" id="country">
                                     <option value="Addis Abeba">Addis Abeba</option>
                                     <option value="Debre markos">Debre markos</option>
                                     <option value="Hawassa">Hawassa</option>
@@ -84,8 +88,11 @@
                             </div>
                             <div class="form-group">
                                 <div class="selection">
-                                    <label for="file">Image </label>
-                                    <input type="file" class="form-control-file" id="file" required>
+                                    <label>Image </label>
+                                    <input type="file" accept="image/*" class="form-control shadow-none" id="file"
+                                        required>
+                                    <label for="file" id="file-input">Choose </label>
+
                                 </div>
                                 <p id="fal"></p>
                             </div>

@@ -17,6 +17,7 @@ body {
 
 .selection {
     display: inline-flex;
+    align-items: center;
     gap: 10px;
 }
 
@@ -31,6 +32,15 @@ p {
     padding: 0;
     margin: 0;
 }
+
+#password:focus,
+#cpassword:focus {
+    box-shadow: none;
+    outline: none;
+    border: none;
+}
+
+
 
 #password,
 #cpassword {
@@ -67,5 +77,21 @@ input[type="file" i]::-webkit-file-upload-button {
     background-color: white;
     border: none;
     margin-right: 1rem;
+    box-shadow: 1px 1px 5px 1px gray;
+}
+
+#file {
+    display: none;
+}
+
+#file-input {
+    padding: 4px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+    border-radius: 5px;
     box-shadow: 1px 1px 5px 1px gray;
 }

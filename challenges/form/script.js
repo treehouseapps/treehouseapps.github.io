@@ -7,6 +7,9 @@ myForm.addEventListener("submit", (event) => {
         myForm.submit();
     }
 });
+const pas = document.getElementById('pholder')
+const cpas = document.getElementById('cpholder')
+
 let iconn = false
 function pshow() {
     iconn = !iconn
