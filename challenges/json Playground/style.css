@@ -1,0 +1,108 @@
+body {
+    background-color: whitesmoke;
+}
+
+.navbar {
+    margin-top: 1rem;
+    border-bottom: 1px solid #333;
+    margin-bottom: 1rem;
+}
+
+
+.navbar-brand a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    font-size: xx-large;
+}
+
+.search {
+    background-color: lightcyan;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.search input {
+    border: none;
+    background-color: lightcyan;
+    padding-left: 1rem;
+    letter-spacing: 1px;
+}
+
+.search input:focus {
+    border: none;
+    outline: none;
+}
+
+.books {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.books-empty {
+    display: flex;
+}
+
+.book-card {
+    width: 20rem;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0.5px 0.5px 10px .5px grey;
+}
+
+.book-card img {
+    width: 5rem;
+    border-radius: 10px;
+}
+
+.book-card .book-divide {
+    display: flex;
+    gap: 1rem;
+}
+
+.book-card .book-detail {
+    max-width: 9;
+}
+
+.book-detail p {
+    font-size: small;
+}
+
+.book-card .title {
+    margin: 5px;
+    font-style: italic;
+    padding: 0px 20px;
+    border-radius: 10px 40px;
+    width: max-content;
+    box-shadow: 1px 1px 3px 1px lightgrey;
+}
+
+.sort {
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+@media (max-width:700px) {
+    .navbar-brand {
+        font-size: 25px;
+    }
+
+    .books {
+        grid-template-columns: 1fr;
+    }
+
+    .search input {
+        width: 10rem;
+    }
+
+    .book-card {
+        width: 19rem;
+    }
+
+    .book-card .title {
+        font-size: 13px;
+    }
+}
